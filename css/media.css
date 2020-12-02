@@ -216,7 +216,7 @@
     }
     /* login */
     .wrap-cm {
-        height: calc(100% - 21rem);
+        height: 100%;
         background-image: url("../img/m_visual_img.png");
     }
     #login .inner-log {
@@ -825,7 +825,7 @@
         position: absolute;
         background-image: url("../img/arrow_next.png");
         top: 50%;
-        right: -1.6rem;
+        right: -1.35rem;
         transform: translateY(-50%);
     }
     #guide .test-step .part-cm.pt-01 .step-ct:last-child {
@@ -849,7 +849,7 @@
     #guide .test-step .sub-penta {
         position: inherit;
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         width: auto;
         height: auto;
         border-bottom: none !important;
@@ -882,6 +882,7 @@
     }
     #guide .test-step .sub-penta span {
         font-size: 1.2rem;
+        color: #333;
     }
     #guide .test-step .sub-penta::after {
         display: none;
