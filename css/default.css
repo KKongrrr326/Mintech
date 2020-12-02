@@ -126,6 +126,11 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background: url("../img/select_box_arrow.png") no-repeat 92% 50%;
+    /* width: 8px; height: 4px; */
+}
+select::-ms-expand {
+    display: none;
 }
 
 /* align */

@@ -458,7 +458,7 @@
         border-radius: .4rem;
     }
     #join .mem-edit-fr .fr-inp select {
-        padding: .9rem;
+        padding: 1rem;
         border-radius: .4rem;
     }
     #join .mem-edit-fr .fr-inp .inp-info {
@@ -509,8 +509,12 @@
     #join .mem-edit-fr .fr-inp .att-box .tab-mu .bar {
         margin: 0 .5rem;
     }
-    #join .mem-edit-fr .mem-cate .type-inp .inp-ct:last-child {
-        margin-left: .5rem;
+    #join .mem-edit-fr .mem-cate .type-inp select {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    #join .mem-edit-fr .mem-cate .type-inp .mid-inp {
+        margin-right: .5rem;
     }
     #join .mem-edit-fr .mem-cate .type-inp input::placeholder {
         color: #999;

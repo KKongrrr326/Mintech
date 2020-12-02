@@ -701,8 +701,8 @@
 #join .mem-edit-fr .mem-cate.show {
     display: block;
 }
-#join .mem-edit-fr .mem-cate .type-inp .inp-ct:last-child {
-    margin-left: 7px;
+#join .mem-edit-fr .mem-cate .type-inp .mid-inp {
+    margin-right: 7px;
 }
 #join .mem-edit-fr .mem-cate .type-inp input::placeholder {
     color: #999;
