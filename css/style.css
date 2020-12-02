@@ -750,7 +750,9 @@
 #sub-visual.employment {
     background-image: url("../img/sub_visual_03.png");
 }
-
+#sub-visual.support {
+    background-image: url("../img/sub_visual_04.png");
+}
 /* aside */
 
 .m-location {
@@ -2183,3 +2185,38 @@ aside ul li.on a::after {
     padding: 12px 28px;
     border-radius: 8px;
 }
+/* support */
+#cs-center .cs-notice {
+    background: #fafafa;
+    padding: 40px 30px 30px 30px ;
+    position: relative;
+    margin: 0 100px;
+    text-align: center;
+}
+#cs-center .cs-notice h1 {
+    color: #fff;
+    background: #162f55;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 25px;
+    border-radius: 30px;
+    position: absolute;
+    top: -30px; left: 50%;
+    transform: translateX(-50%);
+}
+#cs-center .cs-notice ul {
+    margin-bottom: 15px;
+}
+#cs-center .cs-notice ul li {
+    font-size: 15px;
+    line-height: 1.8em;
+}
+#cs-center .cs-notice .tel {
+    font-size: 18px;
+}
+#cs-center .cs-notice .tel span {
+    font-weight: 800;
+    font-size: 22px;
+    margin-left: 10px;
+}
+

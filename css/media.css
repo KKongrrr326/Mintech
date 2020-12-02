@@ -148,6 +148,9 @@
         height: 6.5rem;
         border-bottom: 1px solid rgba(255, 255, 255, .2);
     }
+    #sub-visual.support {
+        background-position: 70%;
+    }
     #sub-visual header {
         border-bottom: none;
     }
@@ -1514,5 +1517,34 @@
         font-size: 1.45rem;
         padding: 1.05rem 2.5rem;
         border-radius: .6rem;
+    }
+    /* support */
+    #cs-center .cs-notice {
+        background: #fafafa;
+        padding: 40px 30px 30px 30px;
+        position: relative;
+        margin: 8rem 1rem 5rem 1rem;
+        text-align: center;
+    }
+    #cs-center .cs-notice h1 {
+        font-size: 1.4rem;
+        padding: 1.2rem 0;
+        border-radius: 1.8rem;
+        top: -3rem;
+        width: 80%;
+    }
+    #cs-center .cs-notice ul {
+        margin-bottom: 1rem;
+    }
+    #cs-center .cs-notice ul li {
+        font-size: 1.4rem;
+        line-height: 1.8em;
+    }
+    #cs-center .cs-notice .tel {
+        font-size: 1.6rem;
+    }
+    #cs-center .cs-notice .tel span {
+        font-size: 2rem;
+        margin-left: .75rem;
     }
 }
