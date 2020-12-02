@@ -1,0 +1,281 @@
+/* default.css */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean');
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 100;
+    src: url('../font/S-CoreDream-1Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 200;
+    src: url('../font/S-CoreDream-2ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 300;
+    src: url('../font/S-CoreDream-3Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 400;
+    src: url('../font/S-CoreDream-4Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 500;
+    src: url('../font/S-CoreDream-5Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 600;
+    src: url('../font/S-CoreDream-6Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 700;
+    src: url('../font/S-CoreDream-7ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 800;
+    src: url('../font/S-CoreDream-8Heavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'S-Core';
+    font-weight: 900;
+    src: url('../font/S-CoreDream-9Black.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    font-size: 10px !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    background: transparent;
+    border: none;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* align */
+
+.align-left {
+    text-align: left !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.align-top {
+    vertical-align: top !important;
+}
+
+.align-bottom {
+    vertical-align: bottom !important;
+}
+
+/* display */
+
+.block {
+    display: block
+}
+
+.in-block {
+    display: inline-block;
+}
+
+/* width */
+
+.width-10 {
+    width: 10% !important;
+}
+
+.width-15 {
+    width: 15% !important;
+}
+
+.width-20 {
+    width: 20% !important;
+}
+
+.width-25 {
+    width: 25% !important;
+}
+
+.width-30 {
+    width: 30% !important;
+}
+
+.width-35 {
+    width: 35% !important;
+}
+
+.width-40 {
+    width: 40% !important;
+}
+
+.width-45 {
+    width: 45% !important;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.width-55 {
+    width: 55% !important;
+}
+
+.width-60 {
+    width: 60% !important;
+}
+
+.width-65 {
+    width: 65% !important;
+}
+
+.width-70 {
+    width: 70% !important;
+}
+
+.width-75 {
+    width: 75% !important;
+}
+
+.width-80 {
+    width: 80% !important;
+}
+
+.width-85 {
+    width: 85% !important;
+}
+
+.width-90 {
+    width: 90% !important;
+}
+
+.width-95 {
+    width: 95% !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+/* font */
+
+.font-0 {
+    font-size: 0;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* background */
+
+.bg-img {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mg-auto {
+    margin: 0 auto;
+}
+
+.wrap-cm {
+    height: calc(100% - 230px);
+    background-image: url("../img/visual_img.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pg-bg {
+    background: #f2f3f4;
+    padding-bottom: 50px;
+}
+
+.ct-bg {
+    background: #fff;
+    padding: 80px 20px;
+    font-size: 0;
+}

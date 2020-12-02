@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Mintech ::</title>
+    <!-- googel web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+           if (isMobile) {
+
+               $(".m-location .head").click(function(){
+                   $(this).toggleClass("on")
+                   $(".m-location ul").toggleClass("slide")
+               });
+
+           }
+       });
+   </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="sub-visual" class="aptitude">
+            <div id="open-menu">
+                <div class="hide-btn"><button><img src="img/close_btn.png" alt=""></button></div>
+                <div class="user-btn">
+                    <input type="button" value="로그인" onclick="location.href='login.html'">
+                    <input type="button" value="회원가입" onclick="location.href='join_tos.html'">
+                </div> <!-- end user-btn -->
+                <ul class="menu-list">
+                    <li><a href="customize_overview.html">맞춤설계</a></li>
+                    <li><a href="aptitude_guide.html">직무적성</a></li>
+                    <li><a href="employment_overview.html">취업캠프</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div> <!-- end open-menu -->
+            <header>
+                <div class="container">
+                    <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="m-menu"><img src="img/m_menu.png" alt=""></button>
+                    <nav>
+                        <ul class="depth1">
+                            <li><a href="#">맞춤설계</a>
+                                <ul class="depth2">
+                                    <li><a href="customize_overview.html">개요</a></li>
+                                    <li><a href="customize_flowchart.html">흐름도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">직무적성</a>
+                                <ul class="depth2">
+                                    <li><a href="aptitude_guide.html">검사안내</a></li>
+                                    <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                                    <li><a href="aptitude_result_01.html">결과보기</a></li>
+                                    <li><a href="aptitude_request.html">자료요청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">취업캠프</a>
+                                <ul class="depth2">
+                                    <li><a href="employment_overview.html">개요</a></li>
+                                    <li><a href="employment_apply.html">신청하기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end container -->
+            </header> <!-- end header -->
+            <div class="pg-tit">
+                <h1>직무적성</h1>
+                <p>Mintech에서 다양한 서비스와 혜택을 경험 할 수 있습니다.</p>
+            </div> <!-- end pg-tit -->
+        </div> <!-- end sub-visual -->
+        <div id="request" class="pg-bg">
+            <div class="ct-bg container">
+                <aside>
+                    <div class="pg-name">
+                        <div class="inner-wrap">
+                            <p>직무적성</p>
+                        </div>
+                    </div> <!-- end pg-name -->
+                    <ul>
+                        <li><a href="aptitude_guide.html">검사안내</a></li>
+                        <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                        <li><a href="aptitude_result_01.html">결과보기</a></li>
+                        <li class="on"><a href="aptitude_request.html">자료요청</a></li>
+                    </ul>
+                </aside>
+                <div class="common-ct">
+                    <div class="ct-head">
+                        <h2>자료요청</h2>
+                    </div> <!-- end ct-head -->
+                    <div class="m-location">
+                        <p class="head">자료요청</p>
+                        <ul>
+                            <li><a href="aptitude_guide.html">검사안내</a></li>
+                            <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                            <li><a href="aptitude_result_01.html">결과보기</a></li>
+                            <li><a href="aptitude_request.html">자료요청</a></li>
+                        </ul>
+                    </div> <!-- end m-location -->
+                    <div class="inner-ct">
+                        <div class="re-fr">
+                            <div class="thead"><span>전문가 상담선택</span></div>
+                            <div class="tbody">
+                                <select name="" id="">
+                                    <option value="">홍박사 전문가분석(직무적성) 의뢰</option>
+                                    <option value="">취업왕 전문가분석(직무적성) 의뢰</option>
+                                </select>
+                            </div> <!-- end tbody -->
+                        </div> <!-- end re-fr -->
+                        <div class="re-fr">
+                            <div class="thead"><span>전문가 위원 프로필 소개</span></div>
+                            <div class="profile font-0">
+                                <div class="pf-thum in-block align-top">
+                                    <div class="pf-img"><img src="" alt=""></div>
+                                    <p>나전문 <span>상담학</span></p>
+                                </div> <!-- pf-thum -->
+                                <div class="pf-info in-block align-top">
+                                    <ul>
+                                        <li>닉네임</li>
+                                        <li>천둥바람</li>
+                                    </ul>
+                                    <ul>
+                                        <li>이름</li>
+                                        <li>홍길동</li>
+                                    </ul>
+                                    <ul>
+                                        <li>소속 / 직위</li>
+                                        <li>청년취업상담기관 / 상담학</li>
+                                    </ul>
+                                    <ul>
+                                        <li>경력</li>
+                                        <li>5년</li>
+                                    </ul>
+                                    <ul>
+                                        <li>이메일</li>
+                                        <li>test01@naver.com</li>
+                                    </ul>
+                                </div> <!-- pf-info -->
+                            </div> <!-- end profile -->
+                        </div> <!-- end re-fr -->
+                        <div class="re-fr">
+                            <div class="thead"><span>취업왕 전문가분석(직무적성) 의뢰 상품소개</span></div>
+                            <textarea name="" id=""
+                                placeholder="진로에 대한 방향성을 확보해주고, 개인별 성향에 맞추어 취업설계를 근본적으로 도와드립니다."></textarea>
+                        </div> <!-- end re-fr -->
+                        <div class="re-fr">
+                            <div class="thead"><span>분석의뢰 비용</span></div>
+                            <div class="tbody">
+                                <p>3,000원</p>
+                            </div>
+                        </div> <!-- end re-fr -->
+                        <div class="re-fr">
+                            <div class="thead"><span>의뢰 내용 및 요구사항</span></div>
+                            <textarea name="" id="" placeholder="궁금하신 사항을 남겨보세요."></textarea>
+                        </div> <!-- end re-fr -->
+                    </div> <!-- end inner-ct -->
+                    <div class="apply-btn"><input type="button" value="신청하기"></div>
+                </div> <!-- end common-ct -->
+            </div> <!-- end container -->
+        </div> <!-- end request -->
+        <footer>
+            <div class="container">
+                <p class="ft-info">사업자등록 번호 : 880-24-008886 <span class="bar">|</span> 회사명 : 주식회사 민테크 <span
+                        class="bar">|</span> 대표 : 황민희 <span class="bar">|</span> 개인정보보호관리자 : 정하늘 <span
+                        class="bar">|</span> 경기도 하남시 덕풍동로 111-33-1007호 <span class="bar">|</span> TEL.
+                    070-4353-4430
+                    <span class="bar">|</span> FAX. 02-6008-6770 <span class="bar">|</span> e-mail :
+                    int3611@naver.com</p>
+                <p class="copyright">Copyright &copy; SmartCop GmbH KOREA All rights reserved.</p>
+            </div> <!-- end container -->
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

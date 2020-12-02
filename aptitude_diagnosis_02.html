@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Mintech ::</title>
+    <!-- googel web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+           if (isMobile) {
+
+               $(".m-location .head").click(function(){
+                   $(this).toggleClass("on")
+                   $(".m-location ul").toggleClass("slide")
+               });
+
+           }
+       });
+   </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="sub-visual" class="aptitude">
+            <div id="open-menu">
+                <div class="hide-btn"><button><img src="img/close_btn.png" alt=""></button></div>
+                <div class="user-btn">
+                    <input type="button" value="로그인" onclick="location.href='login.html'">
+                    <input type="button" value="회원가입" onclick="location.href='join_tos.html'">
+                </div> <!-- end user-btn -->
+                <ul class="menu-list">
+                    <li><a href="customize_overview.html">맞춤설계</a></li>
+                    <li><a href="aptitude_guide.html">직무적성</a></li>
+                    <li><a href="employment_overview.html">취업캠프</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div> <!-- end open-menu -->
+            <header>
+                <div class="container">
+                    <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="m-menu"><img src="img/m_menu.png" alt=""></button>
+                    <nav>
+                        <ul class="depth1">
+                            <li><a href="#">맞춤설계</a>
+                                <ul class="depth2">
+                                    <li><a href="customize_overview.html">개요</a></li>
+                                    <li><a href="customize_flowchart.html">흐름도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">직무적성</a>
+                                <ul class="depth2">
+                                    <li><a href="aptitude_guide.html">검사안내</a></li>
+                                    <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                                    <li><a href="aptitude_result_01.html">결과보기</a></li>
+                                    <li><a href="aptitude_request.html">자료요청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">취업캠프</a>
+                                <ul class="depth2">
+                                    <li><a href="employment_overview.html">개요</a></li>
+                                    <li><a href="employment_apply.html">신청하기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end container -->
+            </header> <!-- end header -->
+            <div class="pg-tit">
+                <h1>직무적성</h1>
+                <p>Mintech에서 다양한 서비스와 혜택을 경험 할 수 있습니다.</p>
+            </div> <!-- end pg-tit -->
+        </div> <!-- end sub-visual -->
+        <div id="diagnosis" class="pg-bg">
+            <div class="ct-bg container">
+                <aside>
+                    <div class="pg-name">
+                        <div class="inner-wrap">
+                            <p>직무적성</p>
+                        </div>
+                    </div> <!-- end pg-name -->
+                    <ul>
+                        <li><a href="aptitude_guide.html">검사안내</a></li>
+                        <li class="on"><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                        <li><a href="aptitude_result_01.html">결과보기</a></li>
+                        <li><a href="aptitude_request.html">자료요청</a></li>
+                    </ul>
+                </aside>
+                <div class="common-ct">
+                    <div class="ct-head">
+                        <h2>진단하기</h2>
+                    </div> <!-- end ct-head -->
+                    <div class="m-location">
+                        <p class="head">진단하기</p>
+                        <ul>
+                            <li><a href="aptitude_guide.html">검사안내</a></li>
+                            <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                            <li><a href="aptitude_result_01.html">결과보기</a></li>
+                            <li><a href="aptitude_request.html">자료요청</a></li>
+                        </ul>
+                    </div> <!-- end m-location -->
+                    <div class="cm-test-pg">
+                        <div class="test-tit">
+                            <p>문제해결능력</p>
+                            <span>학생이 주어진 과제를 수행하거나 학습을 하는 과정에서 어떤 문제가 발생할 경우 그 문제의 핵심을 이해하고 문제를 해결하기 위한 방법들을 찾아내고 주어진 상황에서 가장 적합한 방법을 선택하여 문제를 해결해내는 능력</span>
+                        </div> <!-- end test-tit -->
+                            <table class="test-list">
+                                <colgroup>
+                                <col width="12%">
+                                <col width="88%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>문제해결능력 문항</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">늘 참신하고 독특한 아이디어를 내놓는다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li class="on">
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">어떠한 문제 발생 시 과거 방식의 틀을 벗어나 상황에 맞게 새로운 방식으로 문제를 해결하려 노력한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">문제 해결이 필요한 경우 문제가 발생한 과정을 확인한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">업무프로세스에 영향을 줄 수 있는 사항들을 객관적인 자료를 토대로 판단하여 결정한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">문제를 해결하려는 데 필요한 단계들이 있을 때 우선순위를 매겨 실천한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">어떤 문제도 해결할 수 있다는 적극적이고 긍정적인 사고와 행동을 보인다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">다른 사람들의 문제해결 방식을 관찰하면서 배우는 편이다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">문제가 생기면 그것을 귀찮게 여기지 않고 엉뚱하더라도 수시로 해결방안을 모색하여 제시한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">문제가 발생한 상황을 정확히 이해하기 위해 정보수집활동을 충분히 한다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>
+                                            <div class="q-test">
+                                                <p class="question">문제가 발생했을 때 시간이 지나면 문제가 해결되리라는 생각으로 가만히 있는다.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="score">1</p>
+                                                        <span class="degree">매우 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">2</p>
+                                                        <span class="degree">그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">3</p>
+                                                        <span class="degree">보통 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">4</p>
+                                                        <span class="degree">약간 그렇지 않다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">5</p>
+                                                        <span class="degree">약간 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">6</p>
+                                                        <span class="degree">보통 그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">7</p>
+                                                        <span class="degree">그렇다.</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="score">8</p>
+                                                        <span class="degree">매우 그렇다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- end q-test -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="m-test-list">
+                                <div class="head">
+                                    <h2>문제해결능력 문항</h2>
+                                </div> <!-- end head -->
+                                <div class="t-area">
+                                    <div class="t-box">
+                                        <p>01. 늘 참신하고 독특한 아이디어를 내놓는다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree on"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>02. 어떠한 문제 발생 시 과거 방식의 틀을 벗어나 상황에 맞게 새로운 방식으로 문제를 해결하려 노력한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree on"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>03. 문제 해결이 필요한 경우 문제가 발생한 과정을 확인한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree on"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>04. 업무프로세스에 영향을 줄 수 있는 사항들을 객관적인 자료를 토대로 판단하여 결정한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree on"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>05. 문제를 해결하려는데 필요한 단계들이 있을 때 우선 순위를 매겨 실천한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree on"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>06. 어떤 문제도 해결할 수 있다는 적극적이고 긍정적인 사고와 행동을 보인다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree on"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>07. 다른 사람들의 문제해결 방식을 관찰하면서 배우는 편이다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree on"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>08. 문제가 생기면 그것을 귀찮게 여기지 않고 엉뚱하더라도 수시로 해결방안을 모색하여 제시한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree on"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>09. 문제가 발생한 상황을 정확히 이해하기 위해 정보수집활동을 충분히 한다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree on"></li>
+                                            <li class="max-agree"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                    <div class="t-box">
+                                        <p>10. 문제가 발생했을 때 시간이 지나면 문제가 해결되리라는 생각으로 가만히 있는다.</p>
+                                        <ul class="option">
+                                            <li class="max-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="min-agree"></li>
+                                            <li class="med-agree"></li>
+                                            <li class="mod-agree"></li>
+                                            <li class="max-agree on"></li>
+                                        </ul> <!-- end option -->
+                                    </div> <!-- end t-box -->
+                                </div> <!-- end t-area -->
+                            </div> <!-- end m-test-list -->
+                    </div> <!-- end cm-test-pg -->
+                    <div class="next-btn align-center">
+                        <a href="aptitude_diagnosis_02.html"><p>다음</p></a>
+                    </div> <!-- end next-btn -->
+                </div> <!-- end common-ct -->
+            </div> <!-- end container -->
+        </div> <!-- end diagnosis -->
+        <footer>
+            <div class="container">
+                <p class="ft-info">사업자등록 번호 : 880-24-008886 <span class="bar">|</span> 회사명 : 주식회사 민테크 <span
+                        class="bar">|</span> 대표 : 황민희 <span class="bar">|</span> 개인정보보호관리자 : 정하늘 <span
+                        class="bar">|</span> 경기도 하남시 덕풍동로 111-33-1007호 <span class="bar">|</span> TEL.
+                    070-4353-4430
+                    <span class="bar">|</span> FAX. 02-6008-6770 <span class="bar">|</span> e-mail :
+                    int3611@naver.com</p>
+                <p class="copyright">Copyright &copy; SmartCop GmbH KOREA All rights reserved.</p>
+            </div> <!-- end container -->
+        </footer>
+
+    </div> <!-- end wrap -->
+</body>
+
+</html>

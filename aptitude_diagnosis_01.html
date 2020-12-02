@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Mintech ::</title>
+    <!-- googel web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+           if (isMobile) {
+
+               $(".m-location .head").click(function(){
+                   $(this).toggleClass("on")
+                   $(".m-location ul").toggleClass("slide")
+               });
+
+           }
+       });
+   </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="sub-visual" class="aptitude">
+            <div id="open-menu">
+                <div class="hide-btn"><button><img src="img/close_btn.png" alt=""></button></div>
+                <div class="user-btn">
+                    <input type="button" value="로그인" onclick="location.href='login.html'">
+                    <input type="button" value="회원가입" onclick="location.href='join_tos.html'">
+                </div> <!-- end user-btn -->
+                <ul class="menu-list">
+                    <li><a href="customize_overview.html">맞춤설계</a></li>
+                    <li><a href="aptitude_guide.html">직무적성</a></li>
+                    <li><a href="employment_overview.html">취업캠프</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div> <!-- end open-menu -->
+            <header>
+                <div class="container">
+                    <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="m-menu"><img src="img/m_menu.png" alt=""></button>
+                    <nav>
+                        <ul class="depth1">
+                            <li><a href="#">맞춤설계</a>
+                                <ul class="depth2">
+                                    <li><a href="customize_overview.html">개요</a></li>
+                                    <li><a href="customize_flowchart.html">흐름도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">직무적성</a>
+                                <ul class="depth2">
+                                    <li><a href="aptitude_guide.html">검사안내</a></li>
+                                    <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                                    <li><a href="aptitude_result_01.html">결과보기</a></li>
+                                    <li><a href="aptitude_request.html">자료요청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">취업캠프</a>
+                                <ul class="depth2">
+                                    <li><a href="employment_overview.html">개요</a></li>
+                                    <li><a href="employment_apply.html">신청하기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end container -->
+            </header> <!-- end header -->
+            <div class="pg-tit">
+                <h1>직무적성</h1>
+                <p>Mintech에서 다양한 서비스와 혜택을 경험 할 수 있습니다.</p>
+            </div> <!-- end pg-tit -->
+        </div> <!-- end sub-visual -->
+        <div id="diagnosis" class="pg-bg">
+            <div class="ct-bg container">
+                <aside>
+                    <div class="pg-name">
+                        <div class="inner-wrap">
+                            <p>직무적성</p>
+                        </div>
+                    </div> <!-- end pg-name -->
+                    <ul>
+                        <li><a href="aptitude_guide.html">검사안내</a></li>
+                        <li class="on"><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                        <li><a href="aptitude_result_01.html">결과보기</a></li>
+                        <li><a href="aptitude_request.html">자료요청</a></li>
+                    </ul>
+                </aside>
+                <div class="common-ct">
+                    <div class="ct-head">
+                        <h2>진단하기</h2>
+                    </div> <!-- end ct-head -->
+                    <div class="m-location">
+                        <p class="head">진단하기</p>
+                        <ul>
+                            <li><a href="aptitude_guide.html">검사안내</a></li>
+                            <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                            <li><a href="aptitude_result_01.html">결과보기</a></li>
+                            <li><a href="aptitude_request.html">자료요청</a></li>
+                        </ul>
+                    </div> <!-- end m-location -->
+                    <div class="inner-ct">
+                        <div class="progress-noti">
+                            <p>꼭 알아두세요 !</p>
+                            <ul>
+                                <li>
+                                    1. 이 검사는 여러분의 직업기초능력을 진단하는 검사입니다.<br>
+                                    평소 자신의 행동습관대로 솔직하게 응답하십시오.
+                                </li>
+                                <li>
+                                    2. 이 검사는 개인이 직업기초능력을 진단하여 자기를 개발하고 학교와 직장 및 실생활에 도움을 주고자 하는 데에 목적을 두고 있습니다.</li>
+                                <li>
+                                    3. 이 검사에는 정답이 없습니다.<br>
+                                    각 문항에 제시된 행동사례를 읽은 다음 자신에게 습관처럼 일어나는 지속적인 행동, 즉 자신에게 좀 더 가깝다고 생각되는 행동 수준을 고려하여 자신이 인식하는 해당 점수를 별도의 답안용지에 소수점 첫째자리 형태로 기입하시면 됩니다.
+                                </li>
+                                <li>4. 자신이 인식하는 해당점수는 척도 상에서 바로 위에 위치하는 진술문의 수치보다 높을 수 없으며, 바로 아래에 위치하는 진술문의 수치보다 낮을 수도 없습니다.</li>
+                                <li>5. 시간제한은 없으나 어느 한 문항을 너무 오래 생각하지 마시고, 한 문항도 빠짐없이 응답하십시오</li>
+                                <li>6. 빠진 문항이 없는 지 확인 후 검사를 마치시기 바랍니다.</li>
+                            </ul>
+                        </div> <!-- end progress-noti -->
+                        <div class="next-btn align-right">
+                            <a href="aptitude_diagnosis_02.html"><p>다음</p></a>
+                        </div> <!-- end next-btn -->
+                    </div> <!-- end inner-ct -->
+                </div> <!-- end common-ct -->
+            </div> <!-- end container -->
+        </div> <!-- end diagnosis -->
+        <footer>
+            <div class="container">
+                <p class="ft-info">사업자등록 번호 : 880-24-008886 <span class="bar">|</span> 회사명 : 주식회사 민테크 <span
+                        class="bar">|</span> 대표 : 황민희 <span class="bar">|</span> 개인정보보호관리자 : 정하늘 <span
+                        class="bar">|</span> 경기도 하남시 덕풍동로 111-33-1007호 <span class="bar">|</span> TEL.
+                    070-4353-4430
+                    <span class="bar">|</span> FAX. 02-6008-6770 <span class="bar">|</span> e-mail :
+                    int3611@naver.com</p>
+                <p class="copyright">Copyright &copy; SmartCop GmbH KOREA All rights reserved.</p>
+            </div> <!-- end container -->
+        </footer>
+
+    </div> <!-- end wrap -->
+</body>
+
+</html>

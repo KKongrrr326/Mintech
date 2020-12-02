@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Mintech ::</title>
+    <!-- googel web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $(function () {
+                $("#popup .tab-mu li").click(function () {
+
+                    var tab_show_ct = $(this).index();
+                    $("#popup .tab-mu li").removeClass("on");
+                    $("#popup .tab-mu li:eq( " + tab_show_ct + " )").addClass("on");
+
+                    $("#popup .popup-ct").removeClass("show");
+                    $("#popup .popup-ct:eq( " + tab_show_ct + " )").addClass("show");
+
+                    $("#popup .foot input").removeClass("on");
+                    $("#popup .foot input:eq( " + tab_show_ct + " )").addClass("on");
+
+
+                });
+
+            });
+
+        });
+        jQuery(document).ready(function ($) {
+            // pc 감지
+            if (!isMobile) {
+                $(function () {
+                    $("#popup .close-btn").click(function () {
+                        $("#popup").hide();
+                    });
+                    $("#login .user-btn .find-btn").click(function () {
+                        $("#popup").show();
+                    });
+                });
+
+
+            }
+        });
+
+        jQuery(document).ready(function ($) {
+            if (isMobile) {
+                // mobile 감지 
+                $(function () {
+                    $("#login .m-user-btn .find-btn").click(function () {
+                        $("#popup").show();
+                    })
+                    $("#popup .close-btn").click(function () {
+                        $("#popup").hide();
+                    })
+                });
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="main-visual">
+            <div id="open-menu">
+                <div class="hide-btn"><button><img src="img/close_btn.png" alt=""></button></div>
+                <div class="user-btn">
+                    <input type="button" value="로그인" onclick="location.href='login.html'">
+                    <input type="button" value="회원가입" onclick="location.href='join_tos.html'">
+                </div> <!-- end user-btn -->
+                <ul class="menu-list">
+                    <li><a href="customize_overview.html">맞춤설계</a></li>
+                    <li><a href="aptitude_guide.html">직무적성</a></li>
+                    <li><a href="employment_overview.html">취업캠프</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div> <!-- end open-menu -->
+            <header>
+                <div class="container">
+                    <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="m-menu"><img src="img/m_menu.png" alt=""></button>
+                    <nav>
+                        <ul class="depth1">
+                            <li><a href="#">맞춤설계</a>
+                                <ul class="depth2">
+                                    <li><a href="customize_overview.html">개요</a></li>
+                                    <li><a href="customize_flowchart.html">흐름도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">직무적성</a>
+                                <ul class="depth2">
+                                    <li><a href="aptitude_guide.html">검사안내</a></li>
+                                    <li><a href="aptitude_diagnosis_01.html">진단하기</a></li>
+                                    <li><a href="aptitude_result_01.html">결과보기</a></li>
+                                    <li><a href="aptitude_request.html">자료요청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">취업캠프</a>
+                                <ul class="depth2">
+                                    <li><a href="employment_overview.html">개요</a></li>
+                                    <li><a href="employment_apply.html">신청하기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end container -->
+            </header> <!-- end header -->
+
+            <div class="wrap-cm">
+                <div id="login">
+                    <div id="popup">
+                        <button class="close-btn"><img src="img/close_btn.png" alt=""></button>
+                        <div class="head">
+                            <ul class="tab-mu">
+                                <li class="on">아이디 찾기</li>
+                                <li>비밀번호 찾기</li>
+                            </ul> <!-- end tab-mu -->
+                        </div> <!-- end head -->
+                        <div class="popup-ct show">
+                            <ul>
+                                <li>회원명</li>
+                                <li><input type="text" name="" id="" class="width-100"></li>
+                            </ul>
+                            <ul>
+                                <li>성별</li>
+                                <li>
+                                    <div class="gender">
+                                        <input type="button" value="남자" class="on">
+                                        <input type="button" value="여자">
+                                    </div> <!-- end gender-->
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>이메일</li>
+                                <li>
+                                    <div class="email">
+                                        <input type="text" name="" id="">
+                                        <span>@</span>
+                                        <select name="" id="">
+                                            <option value=""> -- 이메일 선택 -- </option>
+                                            <option value="direct">직접입력</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="paran.com">paran.com</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="chol.com">chol.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="freechal.com">freechal.com</option>
+                                            <option value="korea.com">korea.com</option>
+                                        </select>
+                                    </div> <!-- end gender-->
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>생년월일</li>
+                                <li><input type="text" name="" id="" class="width-100" placeholder="ex ) 900326"></li>
+                            </ul>
+                        </div> <!-- end popup-ct -->
+                        <div class="popup-ct">
+                            <ul>
+                                <li>아이디</li>
+                                <li><input type="text" name="" id="" class="width-100"></li>
+                            </ul>
+                            <ul>
+                                <li>이메일</li>
+                                <li>
+                                    <div class="email">
+                                        <input type="text" name="" id="">
+                                        <span>@</span>
+                                        <select name="" id="">
+                                            <option value=""> -- 이메일 선택 -- </option>
+                                            <option value="direct">직접입력</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="paran.com">paran.com</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="chol.com">chol.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="freechal.com">freechal.com</option>
+                                            <option value="korea.com">korea.com</option>
+                                        </select>
+                                    </div> <!-- end gender-->
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>비밀번호 확인질문</li>
+                                <li>
+                                    <select name="" id="" class="pw-question width-100">
+                                        <option value="1">어렸을 적 별명은?</option>
+                                        <option value="2">태어난 곳은?</option>
+                                        <option value="3">어머니 성함은?</option>
+                                        <option value="4">즐겨 부르는 노래는?</option>
+                                        <option value="5">가장 가보고 싶은 곳은?</option>
+                                        <option value="6">애완동물 이름은?</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>비밀번호 확인답변</li>
+                                <li><input type="text" name="" id="" class="width-100"></li>
+                            </ul>
+                        </div> <!-- end popup-ct -->
+                        <div class="foot">
+                            <input class="on" type="button" value="아이디 찾기">
+                            <input type="button" value="비밀번호 찾기">
+                        </div>
+                    </div> <!-- end popup -->
+                    <div class="inner-log">
+                        <div class="login-fr">
+                            <h1>LOGIN</h1>
+                            <input type="text" name="" id="" class="width-100" placeholder="아이디">
+                            <input type="password" name="" id="" class="width-100" placeholder="비밀번호">
+                            <input type="button" value="로그인" class="width-100">
+                        </div> <!-- end login-fr -->
+                        <div class="user-btn">
+                            <ul>
+                                <li>- Mintech 회원가입은 무료입니다.</li>
+                                <li><input class="join-btn" type="button" value="회원가입"
+                                        onclick="location.href='join_tos.html'"></li>
+                            </ul>
+                            <ul>
+                                <li>- 회원아이디 / 비밀번호를 잊으셨나요?</li>
+                                <li><input class="find-btn" type="button" value="아이디/비밀번호 찾기"></li>
+                            </ul>
+                        </div> <!-- end user-btn -->
+                        <div class="m-user-btn">
+                            <ul>
+                                <li><a href="join_tos.html">회원가입</a></li>
+                                <li class="bar">|</li>
+                                <li class="find-btn">아이디 / 비밀번호 찾기</li>
+                            </ul>
+                        </div> <!-- end m-user-btn -->
+                    </div> <!-- end inner-log -->
+                </div> <!-- end login -->
+            </div> <!-- end wrap-cm -->
+
+            <footer class="align-center">
+                <div class="container">
+                    <p class="ft-info">사업자등록 번호 : 880-24-008886 <span class="bar">|</span> 회사명 : 주식회사 민테크 <span
+                            class="bar">|</span> 대표 : 황민희 <span class="bar">|</span> 개인정보보호관리자 : 정하늘 <span
+                            class="bar">|</span> 경기도 하남시 덕풍동로 111-33-1007호 <span class="bar">|</span> TEL.
+                        070-4353-4430
+                        <span class="bar">|</span> FAX. 02-6008-6770 <span class="bar">|</span> e-mail :
+                        int3611@naver.com</p>
+                    <p class="copyright">Copyright &copy; SmartCop GmbH KOREA All rights reserved.</p>
+                </div> <!-- end container -->
+            </footer>
+        </div> <!-- end main-visual -->
+    </div> <!-- end wrap -->
+</body>
+
+</html>
