@@ -120,13 +120,14 @@ footer {
 }
 
 footer p {
-    color: #fff;
-    font-size: 15px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 13px;
     line-height: 1.8em;
+    font-weight: 300;
 }
 
 footer .ft-info {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 footer p .bar {

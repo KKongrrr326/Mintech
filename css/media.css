@@ -756,6 +756,7 @@
     }
     #guide .graph .m-gr-img {
         display: block;
+        margin: 0 auto;
     }
     #guide .graph .graph-info {
         position: inherit;
@@ -781,7 +782,7 @@
         margin-right: .75rem;
     }
     #guide .graph .polygon {
-        top: 42%;
+        top: 44%;
     }
     #guide .graph .cp-poly {
         width: 16rem;
