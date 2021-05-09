@@ -546,8 +546,14 @@
         display: block;
         position: relative;
         height: 5rem;
-        border-bottom: 1px solid #152f54;
-        z-index: 55;
+        z-index: 99;
+    }
+    .m-location.fixed {
+        width: 100%;
+        position: fixed;
+        top: 6.5rem;
+        background: #fff;
+        box-shadow: 4px 4px 4px rgba(51, 51, 51, .2);
     }
     .m-location .head {
         font-size: 1.6rem;
@@ -555,6 +561,7 @@
         line-height: 5rem;
         padding-left: 2rem;
         font-weight: 500;
+        border-bottom: 1px solid #152f54;
     }
     .m-location .head::after {
         content: "";

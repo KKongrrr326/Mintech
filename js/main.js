@@ -50,7 +50,20 @@ jQuery(document).ready(function ($) {
             }
         })
 
-
+        // header : fixed 
+        var m_fixed_location = 265;
+        $(window).scroll(function () {
+            var window = $(this).scrollTop();
+            if (m_fixed_location <= window) {
+                $(".m-location").addClass("fixed");
+            } else {
+                $(".m-location").removeClass("fixed");
+            }
+        })
+        $(".m-location .head").click(function(){
+            $(this).toggleClass("on")
+            $(".m-location ul").toggleClass("slide")
+        });
         $(function () {
             $("header .m-menu").click(function () {
                 $("#open-menu").show();
